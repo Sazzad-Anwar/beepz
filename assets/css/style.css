@@ -41,13 +41,17 @@ body {
     background: transparent !important;
 }
 
+a {
+    text-decoration: none;
+}
+
 a.nav-link {
     color: #000;
     transition: color 0.3s ease-in-out;
 }
 
 a.nav-link:hover {
-    color: #e2e2e2 !important;
+    color: #e2e1e1b3 !important;
 }
 
 .button__box__shadow__hover {
@@ -68,11 +72,20 @@ a.nav-link:hover {
     color: #fff;
 }
 
+.nav__bg {
+    /* background-color: #e94615; */
+    background-image: url('../images/hero_bg.png');
+}
+
 /*=================== styles for index page ===================*/
 /*========== hero section ===========*/
 .hero__bg {
     background-image: url('../images/hero_bg.png');
     background-size: cover;
+}
+
+#navbar {
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-brand img {
@@ -87,6 +100,10 @@ a.nav-link:hover {
 .nav-link img {
     height: 20px;
     width: auto;
+}
+
+.hero__section {
+    padding-top: 3rem;
 }
 
 .hero__left .small__title {
@@ -158,6 +175,112 @@ a.nav-link:hover {
     margin-bottom: 0;
 }
 
+.slider__section {
+    background-color: #fef2ee;
+    padding: 7rem 0 4rem 0;
+}
+
+.slider__section .h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #e94615;
+}
+
+.slider__section .p {
+    padding: 1rem 0;
+    color: #838383;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+.download__app__section {
+    background-color: #e94615;
+    padding: 5rem 0 4rem 0;
+}
+
+.download__app__section .h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.download__app__section .p {
+    color: #fff;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+.download__app__section .p.description {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.get__app__link {
+    width: 50%;
+    height: 3rem;
+}
+
+.get__app__link input {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.get__app__link button,
+.get__app__link button:hover {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #00294e;
+    padding: 0 2rem;
+    color: #fff;
+}
+
+.footer__section {
+    background-color: #00294e;
+    padding: 5rem 0;
+}
+
+.footer__section h4 {
+    font-size: 1.7rem;
+    color: #e94615;
+    margin-bottom: 1.2rem;
+}
+
+.footer__section p,
+.footer__section address,
+.footer__section a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__section p:hover,
+.footer__section address:hover,
+.footer__section a:hover {
+    color: #e2e1e1b3;
+}
+
+.footer__section h4 {
+    font-weight: 800;
+}
+
+.footer__section .logo img {
+    height: 200%;
+}
+
+.copyright__section {
+    background-color: #202020;
+    padding: 1rem 0;
+}
+
+.copyright__section p {
+    color: #838383;
+    padding: 0;
+    margin: 0;
+}
+
+/*================================ responsiveness =================================*/
+
 @media (min-width: 1400px) {
     .container-xxl,
     .container-xl,
@@ -174,6 +297,10 @@ a.nav-link:hover {
         margin-right: 1rem;
     }
 
+    .hero__section {
+        padding-top: 0rem !important;
+    }
+
     .hero__bg {
         background-origin: top right;
         background-size: cover;
@@ -182,10 +309,6 @@ a.nav-link:hover {
 
     .navbar-brand img {
         height: 50px !important;
-    }
-
-    .hero__section {
-        margin-top: 1.5rem;
     }
 
     .social__media {
@@ -253,5 +376,46 @@ a.nav-link:hover {
         font-weight: 700;
         margin-left: 2rem;
         margin-bottom: 0;
+    }
+
+    .slider__section {
+        padding: 3rem 0;
+    }
+
+    .slider__section .h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .slider__section .p {
+        width: 100%;
+    }
+
+    .slider__section .slider__images img {
+        width: 100%;
+    }
+
+    .download__app__section .h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .download__app__section .p.description {
+        width: 100%;
+        text-align: center;
+    }
+    .download__app__section .p {
+        width: 100%;
+    }
+
+    .get__app__link {
+        width: 100%;
+    }
+    .get__app__link button {
+        padding: auto 0.5rem;
+    }
+
+    .footer__section h4 {
+        margin-top: 2rem;
     }
 }
