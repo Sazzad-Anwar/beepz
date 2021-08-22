@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Avenir';
-    src: url('../font/Avenir.ttc') format('ttc');
+    font-family: Avenir;
+    src: url('./fonts/Avenir.ttc') format('TTC');
 }
 
 [contenteditable].form-control:focus,
@@ -29,10 +29,13 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    font-family: Avenir;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Avenir', sans-serif !important;
     overflow-x: hidden !important;
 }
 
@@ -48,6 +51,8 @@ a {
 a.nav-link {
     color: #000;
     transition: color 0.3s ease-in-out;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 a.nav-link:hover {
@@ -102,9 +107,9 @@ a.nav-link:hover {
     width: auto;
 }
 
-.hero__section {
+/* .hero__section {
     padding-top: 104px;
-}
+} */
 
 .hero__left .small__title {
     color: #fff;
@@ -280,9 +285,9 @@ a.nav-link:hover {
 }
 
 /*=================== styles for contact us page ===================*/
-.contact__us__section {
+/* .contact__us__section {
     margin-top: 104px;
-}
+} */
 .contact__us__section .h1,
 .contact__us__section .h2 {
     text-align: center;
@@ -351,7 +356,6 @@ a.nav-link:hover {
 
 /*=================== styles for about us page ===================*/
 .aboutUs__section {
-    margin-top: 104px;
     margin-bottom: 7rem;
 }
 
@@ -396,7 +400,7 @@ a.nav-link:hover {
 
 /*=================== styles for privacy policy page ===================*/
 .privacy__policy-section {
-    margin: 104px 0 3rem 0 !important;
+    margin-bottom: 3rem !important;
 }
 
 .privacy__policy-section .paragraph .description {
