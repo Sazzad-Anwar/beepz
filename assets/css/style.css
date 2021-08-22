@@ -33,7 +33,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Avenir', sans-serif !important;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 /* common style */
@@ -279,6 +279,139 @@ a.nav-link:hover {
     margin: 0;
 }
 
+/*=================== styles for contact us page ===================*/
+.contact__us__section {
+    margin-top: 5rem;
+}
+.contact__us__section .h1,
+.contact__us__section .h2 {
+    text-align: center;
+}
+
+.contact__us__section .h1 {
+    font-weight: 800;
+}
+
+.contact__us__section .h2 {
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #e94615;
+}
+
+.contact__us__section .contact {
+    margin: 4rem 12%;
+}
+
+.contact__us__section .details {
+    padding-left: 2rem;
+}
+
+.contact__us__section .details a,
+.contact__us__section .details address {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.contact__us__section .details address {
+    width: 75%;
+}
+
+.query__section .container {
+    background-color: #f9f9f9;
+}
+
+.query__section .section__details {
+    padding: 3rem 7rem;
+}
+
+.section__details .h2 {
+    font-weight: 800;
+    color: #e94615;
+    padding-bottom: 1rem;
+}
+
+.section__details .p {
+    color: #838383;
+}
+
+.form__section {
+    margin: 0 20%;
+}
+
+.form__section button {
+    background-color: #00294e;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+.form__section button:hover {
+    color: #fff;
+}
+
+/*=================== styles for about us page ===================*/
+.aboutUs__section {
+    margin-top: 10rem;
+    margin-bottom: 7rem;
+}
+
+.aboutUs__section .h1,
+.privacy__policy-section .h1 {
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.aboutUs__section .section__details .left h1,
+.who__we__are-section .right h1,
+.what__we__do-section .left h1,
+.why__choose__us-section .right h1 {
+    font-weight: 900;
+    color: #e94615;
+}
+
+.aboutUs__section .section__details .left p,
+.why__choose__us-section .section__details .right p {
+    color: #838383;
+    width: 80%;
+}
+
+.who__we__are-section,
+.why__choose__us-section {
+    background-color: #fef2ee;
+    padding: 5rem 0;
+}
+
+.who__we__are-section .left {
+    margin-right: 3rem;
+}
+
+.who__we__are-section .right p,
+.what__we__do-section .right p {
+    color: #838383;
+}
+
+.what__we__do-section {
+    padding: 4rem 0;
+}
+
+/*=================== styles for privacy policy page ===================*/
+.privacy__policy-section {
+    margin: 10rem 0 3rem 0 !important;
+}
+
+.privacy__policy-section .paragraph .description {
+    color: #838383;
+}
+
+.privacy__policy-section .paragraph {
+    padding: 2rem 0;
+}
+.privacy__policy-section .paragraph .title {
+    font-weight: 900;
+    color: #e94615;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
 /*================================ responsiveness =================================*/
 
 @media (min-width: 1400px) {
@@ -417,5 +550,54 @@ a.nav-link:hover {
 
     .footer__section h4 {
         margin-top: 2rem;
+    }
+
+    /*=================== styles for contact us page ===================*/
+
+    .contact__us__section {
+        margin-top: 0rem;
+    }
+
+    .contact__us__section .h1 {
+        font-size: 2.3rem;
+    }
+
+    .contact__us__section .h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact__us__section .details address {
+        width: 100%;
+    }
+
+    .form__section {
+        margin: auto;
+    }
+
+    .query__section .section__details {
+        padding: 3rem 2rem;
+    }
+
+    /*=================== styles for about us page ===================*/
+    .aboutUs__section,
+    .who__we__are-section,
+    .what__we__do-section,
+    .why__choose__us-section {
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+        padding: 0 2rem;
+    }
+    .aboutUs__section .section__details .left p {
+        width: 100%;
+    }
+
+    /*=================== styles for privacy policy us page ===================*/
+
+    .privacy__policy-section {
+        margin: 3rem 0 !important;
+    }
+
+    .privacy__policy-section .paragraph .title {
+        font-size: 1.5rem;
     }
 }

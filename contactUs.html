@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- <html lang="ar" dir="rtl"> -->
-<html lang="en">
+<html lang="ar" dir="rtl">
+    <!-- <html lang="en"> -->
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,7 +22,8 @@
         <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
 
         <!-- RTL css -->
-        <!-- <link rel="stylesheet" href="./assets/css/bootstrap.rtl.css" /> -->
+        <link rel="stylesheet" href="./assets/css/bootstrap.rtl.css" />
+        <link rel="stylesheet" href="./assets/css/rtl.css" />
 
         <!-- All js -->
         <!-- jquery -->
@@ -39,7 +40,7 @@
         <title>Beepz | Home</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg nav__bg fixed-top" id="navbar">
+        <nav class="navbar navbar-expand-lg nav__bg fixed-top shadow-lg" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="./assets/images/logo.png" alt="logo" />
@@ -90,9 +91,218 @@
             </div>
         </nav>
 
-        <section>
-            <h1>hello</h1>
+        <section class="contact__us__section container">
+            <h1 class="h1">Contact Us</h1>
+            <h2 class="h2">We would like to hear from you !</h2>
+            <div
+                class="
+                    contact
+                    d-flex
+                    flex-column flex-lg-row
+                    justify-content-around
+                    align-items-lg-center align-items-start
+                "
+            >
+                <div class="phone d-flex justify-content-between align-items-center mb-5">
+                    <img src="./assets/images/location-large.png" alt="location-icon" />
+                    <div class="details">
+                        <p class="h4">Phone</p>
+                        <a href="tel:+971558547324">+971558547324</a>
+                    </div>
+                </div>
+
+                <div class="email d-flex align-items-center mb-5">
+                    <img src="./assets/images/mail-large.png" alt="mail-icon" />
+                    <div class="details">
+                        <p class="h4">Email</p>
+                        <a href="mailto:info@beepz.ae">info@beepz.ae</a>
+                    </div>
+                </div>
+
+                <div class="address d-flex align-items-center mb-5">
+                    <img src="./assets/images/phone-call-large.png" alt="phone-call-icon" />
+                    <div class="details">
+                        <p class="h4">Location</p>
+                        <address>Milky way business Center Bani yas Road , Dubai</address>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- query section -->
+        <section class="query__section">
+            <div class="container">
+                <div class="row align-items-center section__details">
+                    <div class="col-lg-6 col-md-12">
+                        <h1 class="h2">Leave Us Your Info</h1>
+                        <p class="p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptas
+                            voluptatibus labore ex dolorum? Beatae ea natus iure labore.
+                        </p>
+                        <p class="p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima odio
+                            doloribus deserunt at aspernatur officiis, tempora earum autem.
+                        </p>
+                        <p class="p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima odio
+                            doloribus deserunt at aspernatur officiis, tempora earum autem.
+                            nesciunt, odit ipsa. Nulla.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <form class="form__section">
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="text"
+                                    class="
+                                        form-control
+                                        border-top-0 border-start-0 border-end-0
+                                        bg-transparent
+                                        ps-1
+                                    "
+                                    id="name"
+                                    placeholder="Enter Your Name"
+                                />
+                                <label for="name" class="ps-0">
+                                    <img src="./assets/images/person-icon.png" alt="message-icon" />
+                                    Name
+                                </label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="email"
+                                    class="
+                                        form-control
+                                        border-top-0 border-start-0 border-end-0
+                                        bg-transparent
+                                        ps-1
+                                    "
+                                    id="email"
+                                    placeholder="Enter your email"
+                                />
+                                <label for="email" class="ps-0">
+                                    <img src="./assets/images/mail-icon.png" alt="message-icon" />
+                                    Email
+                                </label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="tel"
+                                    class="
+                                        form-control
+                                        border-top-0 border-start-0 border-end-0
+                                        bg-transparent
+                                        ps-1
+                                    "
+                                    id="phone"
+                                    placeholder="Enter your phone number"
+                                />
+                                <label for="phone" class="ps-0">
+                                    <img src="./assets/images/phone-icon.png" alt="message-icon" />
+                                    Phone Number
+                                </label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input
+                                    type="text"
+                                    class="
+                                        form-control
+                                        border-top-0 border-start-0 border-end-0
+                                        bg-transparent
+                                        ps-1
+                                    "
+                                    id="message"
+                                    placeholder="Type here..."
+                                />
+                                <label for="message" class="ps-0">
+                                    <img
+                                        src="./assets/images/message-icon.png"
+                                        alt="message-icon"
+                                    />
+                                    Message
+                                </label>
+                            </div>
+                            <button
+                                class="btn w-100 rounded-pill button__box__shadow__hover"
+                                type="submit"
+                            >
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- app download section -->
+        <section class="download__app__section">
+            <div class="container">
+                <div
+                    class="
+                        d-flex
+                        flex-column flex-md-row
+                        justify-content-between
+                        align-items-center
+                    "
+                >
+                    <div class="left">
+                        <h1 class="h1">Download the App Now</h1>
+                        <p class="p description">
+                            Beepz App puts valuable vehicle ownership resources right at your
+                            fingertips . Find your favorite dealership ,schedule service . find
+                            Special offers , view your maintenance history and more anytime
+                            ,anywhere .
+                        </p>
+                        <p class="p fs-5">Download on the app store or get it on Google Play .</p>
+                        <div class="input-group mb-3 get__app__link">
+                            <input
+                                type="tel"
+                                class="form-control"
+                                placeholder="+971"
+                                aria-label="+971"
+                                aria-describedby="get__app__link"
+                            />
+                            <button class="btn" type="button" id="get__app__link">
+                                Get App Link Now
+                            </button>
+                        </div>
+                        <div class="hero__image">
+                            <a href="#" class="">
+                                <img
+                                    src="./assets/images/google_play_buton.png"
+                                    alt="googlePlayButton"
+                                    class="
+                                        button__box__shadow__hover
+                                        wow
+                                        animate__animated animate__bounceInUp animate__fast
+                                    "
+                                />
+                            </a>
+                            <a href="#">
+                                <img
+                                    src="./assets/images/app_store_button.png"
+                                    alt="googlePlayButton"
+                                    class="
+                                        button__box__shadow__hover
+                                        wow
+                                        animate__animated animate__bounceInUp
+                                    "
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right wow animate__animated animate__bounceInRight animate__slow">
+                        <img
+                            src="./assets/images/download-app-image.png"
+                            alt="download-app"
+                            class="image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- query section -->
 
         <!-- footer -->
         <footer class="footer__section">
@@ -142,7 +352,7 @@
                             justify-content-center
                             align-items-center
                             wow
-                            animate__animated animate__bounceInRight animate__slow
+                            animate__animated animate__backInRight animate__slow
                         "
                     >
                         <a href="index.html">

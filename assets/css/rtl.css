@@ -1,0 +1,48 @@
+a {
+    text-decoration: none !important;
+}
+
+input {
+    text-align: right !important;
+}
+
+.navbar-nav {
+    margin-left: 0 !important;
+}
+
+.get__app__link {
+    width: 50%;
+    height: 3rem;
+}
+
+.get__app__link input {
+    border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+
+.get__app__link button,
+.get__app__link button:hover {
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    background-color: #00294e;
+    padding: 0 2rem;
+    color: #fff;
+}
+
+.testimonial__section .testimonial__left {
+    margin-right: 0rem;
+    margin-left: 10rem;
+}
+
+.contact__us__section .details {
+    padding-right: 2rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .get__app__link {
+        width: 100%;
+    }
+    .get__app__link button {
+        padding: auto 0.5rem;
+    }
+}
