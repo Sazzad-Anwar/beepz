@@ -103,7 +103,7 @@ a.nav-link:hover {
 }
 
 .hero__section {
-    padding-top: 3rem;
+    padding-top: 104px;
 }
 
 .hero__left .small__title {
@@ -281,7 +281,7 @@ a.nav-link:hover {
 
 /*=================== styles for contact us page ===================*/
 .contact__us__section {
-    margin-top: 5rem;
+    margin-top: 104px;
 }
 .contact__us__section .h1,
 .contact__us__section .h2 {
@@ -351,7 +351,7 @@ a.nav-link:hover {
 
 /*=================== styles for about us page ===================*/
 .aboutUs__section {
-    margin-top: 10rem;
+    margin-top: 104px;
     margin-bottom: 7rem;
 }
 
@@ -396,7 +396,7 @@ a.nav-link:hover {
 
 /*=================== styles for privacy policy page ===================*/
 .privacy__policy-section {
-    margin: 10rem 0 3rem 0 !important;
+    margin: 104px 0 3rem 0 !important;
 }
 
 .privacy__policy-section .paragraph .description {

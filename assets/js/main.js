@@ -31,7 +31,6 @@ $(document).ready(function () {
     window.addEventListener('scroll', () => {
 
         if (window.innerWidth > 991) {
-
             $('#navbar+section').attr('style', `padding-top:${nav.offsetHeight}px !important`);
 
             if ($('#navbar').hasClass("index__page")) {
