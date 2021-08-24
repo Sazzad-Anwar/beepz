@@ -118,7 +118,7 @@ a.nav-link:hover {
 
 .hero__left .large__title {
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     font-style: italic;
     margin-bottom: 1rem;
@@ -431,7 +431,7 @@ a.nav-link:hover {
 }
 /*================================ responsiveness =================================*/
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
     .container-xxl,
     .container-xl,
     .container-lg,
@@ -440,7 +440,7 @@ a.nav-link:hover {
     .container {
         max-width: 1508px;
     }
-}
+} */
 
 @media only screen and (min-width: 320px) and (max-width: 991px) {
     .nav-item.social__media .nav-link {
@@ -628,12 +628,22 @@ a.nav-link:hover {
     }
 
     .hero__left .large__title {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .servicing__card img {
         height: 80px;
         width: 80px;
+    }
+
+    .testimonial__section .testimonial__left .large__title {
+        font-size: 2rem;
+    }
+
+    .contact__us,
+    .company,
+    .legal {
+        margin-right: 2rem;
     }
 }
 

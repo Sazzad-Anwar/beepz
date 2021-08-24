@@ -35,14 +35,18 @@ $(document).ready(function () {
 
         if ($('#navbar').hasClass("index__page")) {
 
-            if (window.scrollY > 50) {
-                nav.classList.add("nav__bg")
-                nav.classList.add("shadow-lg")
-                nav.classList.remove('bg-transparent')
-            } else {
+            if (window.scrollY > 50 && window.innerWidth > 992) {
                 nav.classList.remove("nav__bg")
-                nav.classList.remove("shadow-lg")
+                nav.classList.add("shadow-lg")
                 nav.classList.add('bg-transparent')
+            } else {
+                nav.classList.add("nav__bg")
+                nav.classList.remove("shadow-lg")
+                nav.classList.remove('bg-transparent')
+            }
+            if (window.innerWidth <= 991) {
+                nav.classList.add("nav__bg")
+                nav.classList.remove('bg-transparent')
             }
         }
         // } else {
