@@ -31,28 +31,28 @@ $(document).ready(function () {
 
     window.addEventListener('scroll', () => {
 
-        // if (window.innerWidth > 991) {
+        if (window.innerWidth > 991) {
 
-        if ($('#navbar').hasClass("index__page")) {
+            if ($('#navbar').hasClass("index__page")) {
 
-            if (window.scrollY > 50 && window.innerWidth > 992) {
-                nav.classList.remove("nav__bg")
-                nav.classList.add("shadow-lg")
-                nav.classList.add('bg-transparent')
-            } else {
-                nav.classList.add("nav__bg")
-                nav.classList.remove("shadow-lg")
-                nav.classList.remove('bg-transparent')
+                if (window.scrollY < 50 && window.innerWidth > 992) {
+                    nav.classList.add("nav__bg")
+                    nav.classList.remove("shadow-lg")
+                    nav.classList.add('bg-transparent')
+                } else {
+                    nav.classList.add("nav__bg")
+                    nav.classList.add("shadow-lg")
+                    nav.classList.remove('bg-transparent')
+                }
+                if (window.innerWidth <= 991) {
+                    nav.classList.add("nav__bg")
+                    nav.classList.remove('bg-transparent')
+                }
             }
-            if (window.innerWidth <= 991) {
-                nav.classList.add("nav__bg")
-                nav.classList.remove('bg-transparent')
-            }
+        } else {
+            nav.classList.remove('fixed-top')
+            nav.classList.remove('shadow-lg')
         }
-        // } else {
-        // nav.classList.remove('fixed-top')
-        // nav.classList.remove('shadow-lg')
-        // }
     })
 
     document.getElementById('year').innerHTML = new Date().getFullYear()
