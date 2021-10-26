@@ -318,7 +318,11 @@ a.nav-link:hover {
 }
 
 .contact__us__section .contact {
-    margin: 4rem 12%;
+    margin: 4rem 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8rem;
 }
 
 .contact__us__section .details {
@@ -328,11 +332,11 @@ a.nav-link:hover {
 .contact__us__section .details a,
 .contact__us__section .details address {
     color: #000;
-    font-size: 1.2rem;
+    font-size: 18px;
 }
 
 .contact__us__section .details address {
-    width: 75%;
+    width: 100%;
 }
 
 .query__section .container {
@@ -593,6 +597,10 @@ a.nav-link:hover {
 
     .query__section .section__details {
         padding: 3rem 2rem;
+    }
+
+    .contact__us__section .contact {
+        padding: unset;
     }
 
     /*=================== styles for about us page ===================*/
